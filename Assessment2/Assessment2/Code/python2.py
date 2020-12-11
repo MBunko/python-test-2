@@ -203,6 +203,11 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
+	c=0
+	while c<a:
+		b=len(input)-1
+		input.remove[(b/2)]
+		c+=1
 	return ""
 
 	# <QUESTION 9>
@@ -220,7 +225,23 @@ def eight(input,  a):
 	# There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+	a=string1
+	b=string2
+	c=0
+	if len(a)>=len(b):
+		for i in range (0,len(b)):
+			if b[i] in a:
+				c+=1
+			if c==len(b):
+				return True
+		return False
+	else:
+		for i in range (0,len(a)):
+			if a[i] in b:
+				c+=1
+			if c==len(a):
+				return True
+		return False
 
 	# <QUESTION 10>
 
